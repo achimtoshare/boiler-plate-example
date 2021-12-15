@@ -1,4 +1,4 @@
-const { User } =  require("./models/User");
+const { User } =  require("../models/User");
 let auth = (req,res,next)=>{
 
     //인증처리를 하는 곳
@@ -20,5 +20,4 @@ let auth = (req,res,next)=>{
     //유저가 없으면 인증 실패 
 
 }
-
-module.exports = {auth};
+module.exports = {auth}
